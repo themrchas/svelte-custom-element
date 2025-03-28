@@ -1,8 +1,9 @@
 import { mount } from 'svelte'
 //import './app.css'
-import  './lib/TestTag1.svelte';
+//import  './lib/TestTag1.svelte';
+import './lib/DisplayList.svelte'
 
-/*** uncomment below to include/remove App.svelte 
+/*** uncomment below to include/remove App.svelte  
 
 import App from './App.svelte'
 

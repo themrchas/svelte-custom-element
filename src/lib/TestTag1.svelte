@@ -3,6 +3,8 @@
 
 <script lang="ts">
 
+    import { getFormDigestValue } from './ListService'
+
     let { model, year} = $props();
 
     const delay = (): Promise<string> => {
@@ -18,11 +20,12 @@
 };
 
 
+
 </script>
 
 <main>
 
-    {#await delay()}
+    {#await delay()} 
         <h3>Awaiting promise to resolve...</h3>
     {:then data}
         <h3>Hello from Svelte!</h3>

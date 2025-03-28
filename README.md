@@ -63,7 +63,26 @@ export default defineConfig({
 ],
 })
 
-******
+*********
+
+/* Below is config for includuing App.svelete
+export default defineConfig({
+  plugins: [
+      svelte({
+          exclude: 'src/App.svelte',
+          compilerOptions: {
+              customElement: true,
+          },
+      }),
+      svelte({
+          include: 'src/App.svelte',
+          exclude: 'src/lib/**/*',
+      }),
+  ],
+});
+
+*/
+
 
 In main.ts comment out any references to App.svelte
 Vite's Entry Point:

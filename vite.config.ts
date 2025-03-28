@@ -3,12 +3,12 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-      svelte({
-          exclude: 'src/App.svelte',
-          compilerOptions: {
-              customElement: true,
-          },
-      })
-  ],
-});
+    plugins: [
+        svelte({
+            exclude: 'src/App.svelte',
+            compilerOptions: {
+                customElement: true,
+            },
+        })
+    ],
+})
